@@ -253,9 +253,9 @@
 
   </body>
   <script>
-    var caesarShift = function (str, amount) {
+    var caesar_shift = function (str, amount) {
       if (amount < 0) {
-        return caesarShift(str, amount + 26);
+        return caesar_shift(str, amount + 26);
       }
 
       var output = "";
@@ -283,7 +283,7 @@
 
     var encryptedClass = document.getElementsByClassName("encrypted");
     for (var i = 0; i < encryptedClass.length; i++) {
-      encryptedClass[i].innerHTML = caesarShift (encryptedClass[i].innerText, -3);
+      encryptedClass[i].innerHTML = caesar_shift (encryptedClass[i].innerText, -3);
     }
   </script>
 </html>
