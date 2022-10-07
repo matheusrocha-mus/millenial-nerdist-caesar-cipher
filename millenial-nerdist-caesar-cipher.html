@@ -21,12 +21,18 @@
         font-size: xx-large;
       }
 
-      .movie-poster {
+      .movie-container {
         flex: 50%;
+        margin-bottom: 50px;
+      }
+
+      .movie-poster {
+        float: left;
       }
 
       .row {
         display: flex;
+        margin-left: 50px;
       }
 
       a {
@@ -78,11 +84,20 @@
       aside {
         background-color: rgb(17, 0, 15);
         float: right;
-        border: 15px ridge whitesmoke;
+        border: 10px ridge whitesmoke;
         padding: 10px;
         font-size: large;
       }
       
+      .encrypted, .notEncrypted {
+        text-align: center;
+        padding-top: 27%;
+      }
+
+      div.encrypted, div.notEncrypted {
+        font-size: large;
+      }
+
       footer {
         background-color: rgb(44, 0, 39);
       }
@@ -171,86 +186,87 @@
       <p><a href="shrek.png" target="_blank">
         <img src="social-networks.jpeg" width="320" height="160" alt="social-networks"><br>
         Top 10 Social Networking Sites</a></p>
+      <p><a href="shrek.png" target="_blank">
+        <img src="snake.jpg" width="320" height="160" alt="snake"><br>
+        Top 10 Most Dangerous Animals</a></p>
     </aside>
 
     <article>
       <div class="row">
-        <div class="movie-poster">
-          <div class="notEncrypted">Blade Runner</div>
+        <div class="movie-container">
           <a href="https://www.imdb.com/title/tt0083658/?ref_=nv_sr_srsg_3" target="_blank">
-            <img src="blade-runner-poster.jpg" width="330" height="500" alt="blade-runner-movie-poster">
-          </a>
+            <img class="movie-poster" src="blade-runner-poster.jpg" width="330" height="500" alt="blade-runner-movie-poster"></a>
+          <p class="notEncrypted">Blade Runner</p>
+          <div class="notEncrypted">In a dystopian 2019 Los Angeles of towering skyscrapers, the grizzled former Blade Runner, Rick Deckard, is called out of retirement when four rogue Nexus-6 replicants
+                                    steal a spaceship and illegally enter Earth to find their creator, Dr Eldon Tyrell.</div>
         </div>
 
-        <div class="movie-poster">
-          <div class="encrypted">Wkh Jrrqlhv</div>
+        <div class="movie-container">
           <a href="https://www.imdb.com/title/tt0089218/?ref_=nv_sr_srsg_0" target="_blank">
-            <img src="the-goonies-poster.jpg" width="330" height="500" alt="the-goonies-movie-poster">
-          </a>
+            <img class="movie-poster" src="the-goonies-poster.jpg" width="330" height="500" alt="the-goonies-movie-poster"></a>
+          <p class="encrypted">Wkh Jrrqlhv</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="movie-poster">
-          <div class="notEncrypted">Star Wars: A New Hope</div>
+        <div class="movie-container">
           <a href="https://www.imdb.com/title/tt0076759/?ref_=nv_sr_srsg_1" target="_blank">
-            <img src="star-wars-poster.jpg" width="330" height="500" alt="star-wars-movie-poster">
-          </a>
+            <img class="movie-poster" src="star-wars-poster.jpg" width="330" height="500" alt="star-wars-movie-poster"></a>
+          <p class="notEncrypted">Star Wars: A New Hope</p>
+          <div class="notEncrypted">The Imperial Forces, under orders from cruel Darth Vader, hold Princess Leia hostage in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker
+                                     and Han Solo, captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 and C-3PO to rescue the beautiful princess, help the Rebel Alliance
+                                     and restore freedom and justice to the Galaxy.</div>
         </div>
 
-        <div class="movie-poster">
-          <div class="encrypted">Ihuulv Exhoohu'v Gdb Rii</div>
+        <div class="movie-container">
           <a href="https://www.imdb.com/title/tt0091042/?ref_=nv_sr_srsg_0" target="_blank">
-            <img src="ferris-bueller-poster.jpg" width="330" height="500" alt="ferries-buller-movie-poster">
-          </a>
+            <img class="movie-poster" src="ferris-bueller-poster.jpg" width="330" height="500" alt="ferries-buller-movie-poster"></a>
+          <p class="encrypted">Ihuulv Exhoohu'v Gdb Rii</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="movie-poster">
-          <div class="notEncrypted">Gone With The Wind</div>
+        <div class="movie-container">
           <a href="https://www.imdb.com/title/tt0031381/?ref_=nv_sr_srsg_0" target="_blank">
-            <img src="gone-with-the-wind-poster.jpg" width="330" height="500" alt="gone-with-the-wind-movie-poster">
-          </a>
+            <img class="movie-poster" src="gone-with-the-wind-poster.jpg" width="330" height="500" alt="gone-with-the-wind-movie-poster"></a>
+          <p class="notEncrypted">Gone With The Wind</p>
+          <div class="notEncrypted"></div>
         </div>
 
-        <div class="movie-poster">
-          <div class="encrypted">Vlqjlqj Lq Wkh Udlq</div>
+        <div class="movie-container">
           <a href="https://www.imdb.com/title/tt0045152/?ref_=nv_sr_srsg_2" target="_blank">
-            <img src="singing-in-the-rain-poster.jpg" width="330" height="500" alt="singing-in-the-rain-movie-poster">
-          </a>
+            <img class="movie-poster" src="singing-in-the-rain-poster.jpg" width="330" height="500" alt="singing-in-the-rain-movie-poster"></a>
+          <p class="encrypted">Vlqjlqj Lq Wkh Udlq</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="movie-poster">
-          <div class="notEncrypted">2001: A Space Odyssey</div>
+        <div class="movie-container">
           <a href="https://www.imdb.com/title/tt0062622/?ref_=nv_sr_srsg_0" target="_blank">
-            <img src="2001-space-odyssey-poster.jpg" width="330" height="500" alt="2001-space-odyssey-movie-poster">
-          </a>
+            <img class="movie-poster" src="2001-space-odyssey-poster.jpg" width="330" height="500" alt="2001-space-odyssey-movie-poster"></a>
+          <p class="notEncrypted">2001: A Space Odyssey</p>
+          <div class="notEncrypted"></div>
         </div>
 
-        <div class="movie-poster">
-          <div class="encrypted">Wkh Vkdzvkdqn Uhghpswlrq</div>
+        <div class="movie-container">
           <a href="https://www.imdb.com/title/tt0111161/?ref_=nv_sr_srsg_0" target="_blank">
-            <img src="the-shawshank-redemption-poster.jpg" width="330" height="500" alt="the-shawshank-redemption-movie-poster">
-          </a>
+            <img class="movie-poster" src="the-shawshank-redemption-poster.jpg" width="330" height="500" alt="the-shawshank-redemption-movie-poster"></a>
+          <p class="encrypted">Wkh Vkdzvkdqn Uhghpswlrq</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="movie-poster">
-          <div class="notEncrypted">Pulp Fiction</div>
+        <div class="movie-container">
           <a href="https://www.imdb.com/title/tt0110912/?ref_=nv_sr_srsg_0" target="_blank">
-            <img src="pulp-fiction-poster.jpg" width="330" height="500" alt="pulp-fiction-movie-poster">
-          </a>
+            <img class="movie-poster" src="pulp-fiction-poster.jpg" width="330" height="500" alt="pulp-fiction-movie-poster"></a>
+          <p class="notEncrypted">Pulp Fiction</p>
+          <div class="notEncrypted"></div>
         </div>
 
-        <div class="movie-poster">
-          <div class="encrypted">Wkh Jrgidwkhu</div>
+        <div class="movie-container">
           <a href="https://www.imdb.com/title/tt0068646/?ref_=nv_sr_srsg_0" target="_blank">
-            <img src="the-godfather-poster.jpg" width="330" height="500" alt="the-godfather-movie-poster">
-          </a>
+            <img class="movie-poster" src="the-godfather-poster.jpg" width="330" height="500" alt="the-godfather-movie-poster"></a>
+          <p class="encrypted">Wkh Jrgidwkhu</p>
         </div>
       </div>
     </article>
