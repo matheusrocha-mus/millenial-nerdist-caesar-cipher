@@ -21,20 +21,6 @@
         font-size: xx-large;
       }
 
-      .movie-container {
-        flex: 50%;
-        margin-bottom: 50px;
-      }
-
-      .movie-poster {
-        float: left;
-      }
-
-      .row {
-        display: flex;
-        margin-left: 50px;
-      }
-
       a {
         text-decoration:none;
         color: white;
@@ -48,19 +34,26 @@
         margin-left: 150px;
       }
 
-      nav {
+      header {
         background-color: rgb(43, 0, 26);
         font-size: medium;
         text-align: center;
         padding: 5px;
+        margin-bottom: 14px;
       }
 
-      header {
+      nav {
         background-color: rgb(37, 0, 39);
-        padding: 15px 5px 5px 5px;
-        margin-top: 14px;
+        padding: 10px;
         font-size: large;
         text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100px;
+        width: 100%;
+        z-index: 1;
+        overflow: hidden;
       }
 
       #background-image-and-title {
@@ -81,12 +74,18 @@
         text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
       }
 
-      aside {
-        background-color: rgb(43, 0, 26);
-        float: right;
-        border: 10px ridge whitesmoke;
-        padding: 10px;
-        font-size: large;
+      .movie-container {
+        flex: 50%;
+        margin-bottom: 50px;
+      }
+
+      .movie-poster {
+        float: left;
+      }
+
+      .row {
+        display: flex;
+        margin-left: 50px;
       }
       
       p.encrypted, p.notEncrypted {
@@ -99,6 +98,15 @@
         text-align: justify;
         text-justify: inter-word;
         padding: 0px 20px 0px 350px;
+      }
+
+      aside {
+        border-radius: 25px;
+        background-color: rgb(43, 0, 26);
+        float: right;
+        border: 10px ridge whitesmoke;
+        padding: 10px;
+        font-size: large;
       }
 
       footer {
@@ -121,13 +129,13 @@
 
 
   <body>
-    <nav>
+    <header>
       <a href="shrek.png" target="_blank">Accessibility</a>
       <a class="margin-nav-header" href="shrek.png" target="_blank">Where We Are</a>
       <a class="margin-nav-header" href="shrek.png" target="_blank">Legal Information</a>
       <a class="margin-nav-header" href="shrek.png" target="_blank">Support</a>
-      <select class="margin-nav-header">
-        <option disabled selected>--Language--</option>
+      <select class="margin-nav-header" style="border-radius: 25px; font-family: Montserrat, sans-serif; text-align: center;">
+        <option disabled selected>Language</option>
         <option>English</option>
         <option>American english</option>
         <option>Californian english</option>
@@ -136,25 +144,25 @@
         <option>English, hell yeah!</option>
       </select>
 <!--      <a href="shrek.png" target="_blank"><i class="material-icons" style="text-align: right;">settings</i></a>-->
-    </nav>
+    </header>
     
 
-    <header id="header">
+    <nav id="nav">
       <div style="display:inline-block; vertical-align:top;">
-        <a href="#header">
-          <img src="camera-icon.png" width="50" height="50" alt="film-camera-icon" style="transform: translateY(25%);">
+        <a href="#nav">
+          <img src="camera-icon.png" width="50" height="50" alt="film-camera-icon">
         </a>
       </div>
       <div style="display:inline-block;"><p style="font-family: Aboreto, sans-serif; text-align: left">Millenial<br>Nerdist</p></div>
       <a class="margin-nav-header" id="home" href="#home">
-        <i class="material-icons" style="transform: translateY(-20%);">home</i>
-        <div style="transform: translateY(-40%); display: inline-block;">Home</div></a>
+        <i class="material-icons">home</i>
+        <div style="display: inline-block;">Home</div></a>
       <a class="margin-nav-header" href="shrek.png" target="_blank">News</a>
       <a class="margin-nav-header" href="shrek.png" target="_blank">About</a>
       <a class="margin-nav-header" href="shrek.png" target="_blank">Contact</a>
-      <input class="margin-nav-header" type="text" placeholder="Search..." style="transform: translateY(-85%);">
-      <a href="shrek.png" target="_blank"><i class="material-icons" style="transform: translateY(-40%);">search</i></a>
-    </header>
+      <input class="margin-nav-header" type="text" placeholder="  Search..." style="border-radius: 25px; font-family: Montserrat, sans-serif; padding: 5px 0px">
+      <a href="shrek.png" target="_blank"><i class="material-icons">search</i></a>
+      </nav>
 
 
     <section style="margin-top: 15px;">
@@ -166,7 +174,7 @@
 
 
     <section>
-      <p style="text-align:center;padding:0px 100px 0px 100px">
+      <p style="text-align: center; padding: 0px 100px">
         <emphasis>This text section is a distraction. Actually, this whole page is a distraction and it isn't about movies at all. The truth is that there is a cipher hidden here - a Julius Caesar cipher,
                   to be precise. If you look closely at the titles of the movies in the page you will find... nothing extraordinary. <u>At the surface.</u> You see, half of them were originally written in
                   ciphered text, but is now hidden in the source code of the page. Your job is to find the original text of these titles and the code that "translates" them. Good luck, soldier!</emphasis>
@@ -294,7 +302,7 @@
     </article>
 
 
-    <footer style="padding: 75px 0px 75px 0px;">
+    <footer style="padding: 75px 0px;">
       <div style="display: inline-block; margin-left: 100px;">
         <a href="shrek.png" target="_blank">Terms and Conditions</a>
         <a href="shrek.png" target="_blank">Privacy Statement</a>
