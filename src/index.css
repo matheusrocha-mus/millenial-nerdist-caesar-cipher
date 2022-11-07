@@ -1,0 +1,108 @@
+body {
+    background-color: rgb(19, 3, 26);
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: xx-large;
+}
+
+a {
+    text-decoration:none;
+    color: white;
+}
+
+a:hover {
+    color:rgb(255, 215, 162);
+}
+
+.margin-nav-header {
+    margin-left: 150px;
+}
+
+header {
+    background-color: rgb(43, 0, 26);
+    font-size: medium;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 14px;
+}
+
+nav {
+    background-color: rgb(37, 0, 39);
+    padding: 10px;
+    font-size: large;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#background-image-and-title {
+    position: relative;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+    height: 700px;
+    overflow: hidden;
+}
+
+#background-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(30, 7, 39);
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.movie-container {
+    flex: 50%;
+    margin-bottom: 50px;
+}
+
+.movie-poster {
+    float: left;
+}
+
+.row {
+    display: flex;
+    margin-left: 50px;
+}
+    
+p.encrypted, p.notEncrypted {
+    text-align: center;
+    padding-top: 15%;
+}
+
+div.encrypted, div.notEncrypted {
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+    padding: 0px 20px 0px 350px;
+}
+
+aside {
+    border-radius: 25px;
+    background-color: rgb(43, 0, 26);
+    float: right;
+    border: 10px ridge whitesmoke;
+    padding: 10px;
+    font-size: large;
+}
+
+footer {
+    background-color: rgb(9, 1, 15);
+    font-size: medium;
+}
+
+footer a {
+    margin-bottom: 25px;
+    display: block;
+}
+
+footer div {
+    margin-left: 200px;
+}
