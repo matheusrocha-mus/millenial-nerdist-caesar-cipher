@@ -98,6 +98,7 @@ aside {
 footer {
     background-color: rgb(9, 1, 15);
     font-size: medium;
+    padding: 75px 0px;
 }
 
 footer a {
@@ -110,6 +111,8 @@ footer div {
 }
 
 footer > div { display: inline-block; }
+
+footer div:first-child { margin-left: 100px; }
 
 footer div:last-child a {
     display: inline-block;
